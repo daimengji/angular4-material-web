@@ -1,0 +1,28 @@
+<mat-sidenav-container>
+
+  <mat-sidenav #side class="sidenav" mode="push" position="start">
+
+    <app-sidebar></app-sidebar>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+    <div class="site">
+      <header>
+
+        <app-header (toggle)="side.toggle()"></app-header>
+
+      </header>
+      <main>
+
+      </main>
+      <footer>
+
+        <app-footer></app-footer>
+
+      </footer>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
